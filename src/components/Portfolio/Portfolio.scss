@@ -1,15 +1,70 @@
-.cards__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
+.portfolio__container {
+  .portfolio__text {
+    font-size: 45px;
+    font-weight: 400;
+  }
+
+  .cards__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .ayuda__container {
+    margin-top: 6rem;
+
+    p {
+      font-size: 50px;
+      color: rgba(30, 81, 128, 1);
+      text-align: center;
+    }
+
+    .img__container {
+      background-image: url("../../assets/svg/grupo-letras.svg");
+      background-size: contain;
+      width: 538px;
+      height: 308px;
+    }
+  }
 
   // tablet
   @media only screen and (max-width: 835px) {
-    grid-template-columns: repeat(2, 1fr);
+    .portfolio__text {
+      font-size: 40px;
+    }
+    .cards__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .ayuda__container {
+      margin-top: 6rem;
+
+      p {
+        font-size: 45px;
+      }
+    }
   }
 
   // mobile
   @media only screen and (max-width: 415px) {
-    grid-template-columns: 1fr;
+    .portfolio__text {
+      font-size: 32px;
+    }
+
+    .cards__container {
+      grid-template-columns: 1fr;
+    }
+
+    .ayuda__container {
+      margin-top: 6rem;
+
+      p {
+        font-size: 32px;
+      }
+
+      .img__container {
+        width: 327px;
+        height: 190px;
+      }
+    }
   }
 }

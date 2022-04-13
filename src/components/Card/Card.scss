@@ -2,7 +2,17 @@
   max-width: 413px;
   max-height: 413px;
   height: 413px;
-  background-color: red;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  .nombre_text {
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  }
 
   // tablet
   @media only screen and (max-width: 835px) {

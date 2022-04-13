@@ -6,17 +6,22 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
 
   .nombre_text {
     font-size: 40px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    text-align: end;
   }
 
   // tablet
   @media only screen and (max-width: 835px) {
     height: 387px;
+    justify-content: space-between;
+
+    .nombre_text {
+      text-align: center;
+    }
   }
 
   // mobile

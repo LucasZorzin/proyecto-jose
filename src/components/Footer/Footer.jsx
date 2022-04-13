@@ -9,8 +9,8 @@ import whatsapp from "../../assets/svg/whatsapp.svg";
 function Footer() {
   return (
     <footer className="container-fluid">
-      <section className="d-flex justify-content-between align-items-center">
-        <p className="name__text m-0">José Villagra</p>
+      <section className="main__section--footer d-flex ">
+        <p className="name__text">José Villagra</p>
 
         <div>
           <img src={whatsapp} alt="whatsapp icon" className="me-3" />

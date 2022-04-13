@@ -6,7 +6,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
+  cursor: pointer;
+  &:hover {
+    .nombre_text {
+      display: none;
+    }
+  }
   .nombre_text {
     font-size: 40px;
     color: white;
@@ -18,6 +23,11 @@
   @media only screen and (max-width: 835px) {
     height: 387px;
     justify-content: space-between;
+    &:hover {
+      .nombre_text {
+        display: block;
+      }
+    }
 
     .nombre_text {
       text-align: center;

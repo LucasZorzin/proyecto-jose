@@ -18,7 +18,7 @@ function Portfolio() {
 
   return (
     <section className="container-fluid portfolio__container">
-      <h3 className="text-center mb-4 portfolio__text">Portfolio</h3>
+      <h3 className="text-center pb-5 mb-4 portfolio__text">Portfolio</h3>
 
       <section className="cards__container">
         {categorias.map((cat) => (

@@ -1,10 +1,17 @@
 footer {
   background-color: #1e5180;
   padding: 2rem 0 1rem 0;
+  font-family: "Gotham-Medium";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .main__section--footer {
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1440px;
 
     .name__text {
       color: white;

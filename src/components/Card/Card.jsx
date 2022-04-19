@@ -1,11 +1,14 @@
 import "./Card.scss";
 
+import { Link, useParams } from "react-router-dom";
 import React, { useState } from "react";
 
 import BtnCustom from "../BtnCustom/BtnCustom";
 
 function Card({ img, nombre, descripcion }) {
   const [click, setClick] = useState(false);
+  const { idProyecto } = useParams();
+  console.log(idProyecto);
 
   function handleClick() {
     setClick(!click);
@@ -23,19 +26,25 @@ function Card({ img, nombre, descripcion }) {
       {!click && <p className="nombre_text m-0">{nombre}</p>}
 
       {window.innerWidth < 835 && !click && (
-        <div className="d-flex justify-content-end">
+        <Link
+          to={`/proyectos/${nombre}`}
+          className="d-flex justify-content-end"
+        >
           <BtnCustom text={"Saber +"} onClick={handleClick} />
-        </div>
+        </Link>
       )}
 
       {/* hover */}
-      <div class="info d-flex flex-column justify-content-between">
+      <div className="info d-flex flex-column justify-content-between">
         <h3>{nombre}</h3>
         <p>{descripcion}</p>
 
-        <div className="d-flex justify-content-end">
+        <Link
+          to={`/proyectos/${nombre}`}
+          className="d-flex justify-content-end"
+        >
           <BtnCustom text={"+ info"} />
-        </div>
+        </Link>
       </div>
     </article>
   );

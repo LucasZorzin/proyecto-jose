@@ -3,7 +3,7 @@ import "./Portfolio.scss";
 import BtnCustom from "../BtnCustom/BtnCustom";
 import Card from "../Card/Card";
 import React from "react";
-import { categorias } from "../../data/portfolioData";
+import { servicios } from "../../data/portfolioData";
 
 function Portfolio() {
   function btnSize() {
@@ -18,10 +18,12 @@ function Portfolio() {
 
   return (
     <section className="container-fluid portfolio__container">
-      <h3 className="text-center pb-2 pb-lg-5 mb-4 portfolio__text">Portfolio</h3>
+      <h3 className="text-center pb-2 pb-lg-5 mb-4 portfolio__text">
+        Portfolio
+      </h3>
 
       <section className="cards__container">
-        {categorias.map((cat) => (
+        {servicios.map((cat) => (
           <Card key={cat.id} {...cat} />
         ))}
       </section>

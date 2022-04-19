@@ -1,14 +1,13 @@
 import "./Card.scss";
 
-import { Link, useParams } from "react-router-dom";
 import React, { useState } from "react";
 
 import BtnCustom from "../BtnCustom/BtnCustom";
+import { useNavigate } from "react-router-dom";
 
 function Card({ img, nombre, descripcion }) {
   const [click, setClick] = useState(false);
-  const { idProyecto } = useParams();
-  console.log(idProyecto);
+  const navigate = useNavigate();
 
   function handleClick() {
     setClick(!click);
@@ -26,12 +25,9 @@ function Card({ img, nombre, descripcion }) {
       {!click && <p className="nombre_text m-0">{nombre}</p>}
 
       {window.innerWidth < 835 && !click && (
-        <Link
-          to={`/proyectos/${nombre}`}
-          className="d-flex justify-content-end"
-        >
+        <div className="d-flex justify-content-end">
           <BtnCustom text={"Saber +"} onClick={handleClick} />
-        </Link>
+        </div>
       )}
 
       {/* hover */}
@@ -39,12 +35,12 @@ function Card({ img, nombre, descripcion }) {
         <h3>{nombre}</h3>
         <p>{descripcion}</p>
 
-        <Link
-          to={`/proyectos/${nombre}`}
-          className="d-flex justify-content-end"
-        >
-          <BtnCustom text={"+ info"} />
-        </Link>
+        <div className="d-flex justify-content-end">
+          <BtnCustom
+            text={"+ info"}
+            onClick={() => navigate(`/proyectos/${nombre}`)}
+          />
+        </div>
       </div>
     </article>
   );

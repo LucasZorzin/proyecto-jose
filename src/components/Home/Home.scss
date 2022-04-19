@@ -77,6 +77,9 @@ $font-2: "Open Sans"; //FUENTE Secundaria
         }
     }
 }
+.notebookVectorMax{
+    display: none;
+}
 
 .vector {
     position: absolute;
@@ -129,7 +132,7 @@ $font-2: "Open Sans"; //FUENTE Secundaria
     }
 }
 // Tablet
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .home-header {
         height: 275px;
         p {
@@ -269,12 +272,24 @@ $font-2: "Open Sans"; //FUENTE Secundaria
 
 // Desktop (large desktops, 1400px and up)
 @media (min-width: 1400px) {
+    .sobre-mi{
+        max-width: 1440px;
+        margin: auto;
+    }
+    .notebookVectorMax{
+        display: initial !important;
+    }
     .sobre-mi__vector {
         .notebookVector {
+            display: none;
             padding-top: 0 !important;
         }
         .notebook {
-            transform: translate(-20%, 0px) !important;
+            transform: translate(-50%, 0px) !important;
         }
+    }
+    .i-copywriting{
+        max-width: 1440px;
+        margin: auto;
     }
 }

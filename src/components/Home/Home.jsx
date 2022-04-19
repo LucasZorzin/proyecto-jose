@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.scss";
 import notebookVector from '../../assets/svg/notebook-vector.svg';
+import notebookVectorMax from '../../assets/svg/notebook-vector-max.svg';
 import notebook from '../../assets/svg/notebook.svg';
 import vector from '../../assets/svg/vector.svg';
 
@@ -21,6 +22,7 @@ function Home() {
 
                 <div className="col col-md-5 sobre-mi__vector">
                     <img className="notebookVector" src={notebookVector} alt="vector" />
+                    <img className="notebookVector notebookVectorMax" src={notebookVectorMax} alt="vector" />
                     <img className="notebook" src={notebook} alt="notebook" />
                 </div>
             </div>

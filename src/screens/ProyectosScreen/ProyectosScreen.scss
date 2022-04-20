@@ -1,7 +1,13 @@
 .proyectos__main-section {
   margin-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .proyectos__header-section {
     margin-bottom: 2rem;
+    max-width: 1440px;
+    width: 100%;
 
     h3 {
       font-size: 55px;
@@ -14,6 +20,8 @@
   .projects__container {
     padding: 0 3rem;
     justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
   }
 
   // tablet

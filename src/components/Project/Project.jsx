@@ -14,7 +14,7 @@ function Project({ id, img, descripcion }) {
 
   return (
     <article className={`project__article ${classArticle()}`}>
-      <img src={img} alt={id} className="img-fluid" />
+      <img src={img} alt={id} />
       <section className="d-flex flex-column justify-content-between">
         <p className="descripicion__article">{descripcion}</p>
         <div className={`d-flex btn__container-${classArticle()}`}>

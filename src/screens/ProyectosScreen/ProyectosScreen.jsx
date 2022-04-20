@@ -1,8 +1,7 @@
 import "./ProyectosScreen.scss";
 
-import React, { useEffect } from "react";
-
 import Project from "../../components/Project/Project";
+import React from "react";
 import manchaRight from "../../assets/svg/proyectos-right.svg";
 import notebook from "../../assets/svg/notebook-left.svg";
 import { proyectos } from "../../data/portfolioData";
@@ -12,15 +11,9 @@ function ProyectosScreen() {
   const { idProyectos } = useParams();
   const proyecto = proyectos.find((pro) => pro.servicio === idProyectos);
 
-  console.log(idProyectos);
-
-  useEffect(() => {
-    console.log(proyecto);
-  }, [proyecto]);
-
   return (
     <main className="proyectos__main-section">
-      <section className="proyectos__header-section d-flex justify-content-between align-items-center">
+      <section className="proyectos__header-section d-flex justify-content-between">
         <img src={notebook} alt="notebook" />
         {proyecto && <h3>{proyecto.servicio}</h3>}
         <img src={manchaRight} alt="right" />

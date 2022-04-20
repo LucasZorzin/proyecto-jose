@@ -7,6 +7,7 @@
       font-size: 55px;
       font-weight: 400;
       text-align: center;
+      align-self: center;
     }
   }
 
@@ -34,13 +35,14 @@
     }
   }
   // mobile
-  @media only screen and (max-width: 415px) {
+  @media only screen and (max-width: 530px) {
     .proyectos__header-section {
       img {
         width: 100px;
       }
       h3 {
         font-size: 32px;
+        align-self: flex-end;
       }
     }
 

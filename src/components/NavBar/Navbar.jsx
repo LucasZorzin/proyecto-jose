@@ -29,16 +29,16 @@ function Navbar() {
         <div className="line"></div>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <div className="navbar-nav">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/#sobre-mi">
               Sobre mí
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/#copywriting">
               Copywriting
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/#portfolio">
               Portfolio
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/#contacto">
               Contacto
             </a>
           </div>

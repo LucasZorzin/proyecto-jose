@@ -17,7 +17,7 @@ function Portfolio() {
   }
 
   return (
-    <section className="container-fluid portfolio__container">
+    <section className="container-fluid portfolio__container" id="portfolio">
       <h3 className="text-center pb-2 pb-lg-5 mb-4 portfolio__text">
         Portfolio
       </h3>
@@ -28,7 +28,10 @@ function Portfolio() {
         ))}
       </section>
 
-      <section className="ayuda__container d-flex flex-column align-items-center">
+      <section
+        className="ayuda__container d-flex flex-column align-items-center"
+        id="contacto"
+      >
         <p>¿Necesitas ayuda con tus textos?</p>
 
         <div className="img__container d-flex justify-content-center align-items-center mb-5">

@@ -15,8 +15,20 @@ function Footer() {
         <div>
           <img src={whatsapp} alt="whatsapp icon" className="me-3" />
           <img src={mail} alt="mail icon" className="me-3" />
-          <img src={linkedin} alt="linkedin icon" className="me-3" />
-          <img src={behance} alt="behance icon" />
+          <a
+            href="https://www.linkedin.com/in/joseredactordigital/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedin} alt="linkedin icon" className="me-3" />
+          </a>
+          <a
+            href="https://www.behance.net/joseredactor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={behance} alt="behance icon" />
+          </a>
         </div>
       </section>
       <section>

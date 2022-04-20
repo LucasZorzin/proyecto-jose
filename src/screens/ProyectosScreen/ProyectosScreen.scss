@@ -1,0 +1,51 @@
+.proyectos__main-section {
+  margin-top: 5.5rem;
+  .proyectos__header-section {
+    margin-bottom: 2rem;
+
+    h3 {
+      font-size: 55px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  .projects__container {
+    padding: 0 3rem;
+    justify-content: space-between;
+  }
+
+  // tablet
+  @media only screen and (max-width: 835px) {
+    margin-top: 3rem;
+
+    .proyectos__header-section {
+      img {
+        width: 190px;
+      }
+
+      h3 {
+        font-size: 40px;
+      }
+    }
+
+    .projects__container {
+      padding: 0 1rem;
+    }
+  }
+  // mobile
+  @media only screen and (max-width: 415px) {
+    .proyectos__header-section {
+      img {
+        width: 100px;
+      }
+      h3 {
+        font-size: 32px;
+      }
+    }
+
+    .projects__container {
+      justify-content: center;
+    }
+  }
+}

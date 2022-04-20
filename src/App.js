@@ -3,9 +3,9 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Footer from "./components/Footer/Footer";
-import HomeScreen from "./screens/HomeScreen";
+import HomeScreen from "./screens/HomeScreen/HomeScreen";
 import Navbar from "./components/NavBar/Navbar";
-import Proyectos from "./screens/Proyectos";
+import ProyectosScreen from "./screens/ProyectosScreen/ProyectosScreen";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-        <Route path="/proyectos/:idProyectos" element={<Proyectos />} />
+        <Route path="/proyectos/:idProyectos" element={<ProyectosScreen />} />
       </Routes>
       <Footer />
     </BrowserRouter>

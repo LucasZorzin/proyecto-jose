@@ -2,8 +2,8 @@ import "./ProyectosScreen.scss";
 
 import Project from "../../components/Project/Project";
 import React from "react";
-import manchaRight from "../../assets/svg/proyectos-right.svg";
-import notebook from "../../assets/svg/notebook-left.svg";
+import manchaRight from "../../assets/img/proyectos-right.png";
+import notebook from "../../assets/img/notebook-left.png";
 import { proyectos } from "../../data/portfolioData";
 import { useParams } from "react-router-dom";
 

@@ -5,7 +5,7 @@
 }
 .navbar-light {
   background-color: #ffffff !important;
-  // box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.075);
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.075);
 }
 .navbar-brand {
   font-family: "Gotham-Medium";
@@ -21,7 +21,7 @@
   line-height: 26px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7) !important;
-  padding-bottom: 23px;
+  padding: 0.5rem;
 }
 .nav-link:first-child {
   padding-top: 54px;
@@ -29,6 +29,67 @@
 .nav-link:hover {
   color: rgba(0, 0, 0, 0.904) !important;
 }
+
+.accordion {
+  display: block;
+  .accordion-item {
+    border: none;
+    outline: none;
+    font-family: "Gotham-Medium";
+    $accordion-button-focus-box-shadow: none;
+
+    h2 button {
+      font-size: 18px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .accordion-button {
+      padding: 0.5rem 0;
+      margin-left: 0.5rem;
+
+      &::after {
+        color: rgba(0, 0, 0, 0.7);
+      }
+      &:focus {
+        box-shadow: none;
+      }
+      &:not(.collapsed) {
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.7);
+        box-shadow: none;
+
+        &::after {
+          background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e");
+        }
+      }
+    }
+    .accordion-collapse {
+      background-color: rgba(0, 0, 0, 0.05);
+      width: 100%;
+      .accordion-body {
+        padding: 0;
+        left: 0;
+        width: auto;
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          background-color: rgba(0, 0, 0, 0.05);
+
+          li {
+            padding: 0.3rem 0;
+            a {
+              color: rgba(0, 0, 0, 0.7);
+              text-decoration: none;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .line {
   top: 45px;
   width: 150%;
@@ -67,6 +128,9 @@
 }
 // Tablet
 @media (min-width: 768px) {
+  .link__portfolio {
+    display: none;
+  }
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
   }
@@ -80,6 +144,46 @@
 }
 // PC
 @media (min-width: 992px) {
+  .accordion {
+    display: none;
+  }
+  .link__portfolio {
+    display: block;
+    cursor: pointer;
+    ul {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      list-style: none;
+      padding: 1.5rem 0 0 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem 1rem;
+
+        a {
+          font-size: 15px;
+          font-weight: 400;
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.7);
+          &:hover {
+            color: rgba(0, 0, 0, 0.904);
+          }
+        }
+      }
+    }
+    &:hover {
+      ul {
+        display: block;
+      }
+      .chevron__icon {
+        transform: rotate(180deg);
+        transition: all 0.2s;
+      }
+    }
+  }
   .navbar {
     height: 89px;
   }

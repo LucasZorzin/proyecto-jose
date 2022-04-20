@@ -1,5 +1,6 @@
 import "./Navbar.scss";
 
+import { FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -35,9 +36,108 @@ function Navbar() {
             <a className="nav-link" href="/#copywriting">
               Copywriting
             </a>
-            <a className="nav-link" href="/#portfolio">
-              Portfolio
-            </a>
+            <div className="accordion" id="accordionExample nav-link">
+              <div className="accordion-item d-flex flex-column align-items-center justify-content-center">
+                <h2 className="accordion-header" id="headingOne">
+                  <button
+                    className="accordion-button "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Portfolio
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <ul>
+                      <li>
+                        <Link to={"/proyectos/Redacción web"} onClick={menu}>
+                          Redacción web
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/proyectos/Personajes"} onClick={menu}>
+                          Personajes
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/proyectos/Naming"} onClick={menu}>
+                          Naming
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/proyectos/Redes sociales"} onClick={menu}>
+                          Redes sociales
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/proyectos/Guión"} onClick={menu}>
+                          Guión
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/proyectos/Blogging"} onClick={menu}>
+                          Blogging
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to={"/proyectos/Truchos"} onClick={menu}>
+                          Truchos
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p className="nav-link m-0 link__portfolio">
+              Portfolio <FaChevronUp size={20} className="chevron__icon" />
+              <ul>
+                <li>
+                  <Link to={"/proyectos/Redacción web"} onClick={menu}>
+                    Redacción web
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/proyectos/Personajes"} onClick={menu}>
+                    Personajes
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/proyectos/Naming"} onClick={menu}>
+                    Naming
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/proyectos/Redes sociales"} onClick={menu}>
+                    Redes sociales
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/proyectos/Guión"} onClick={menu}>
+                    Guión
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/proyectos/Blogging"} onClick={menu}>
+                    Blogging
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/proyectos/Truchos"} onClick={menu}>
+                    Truchos
+                  </Link>
+                </li>
+              </ul>
+            </p>
             <a className="nav-link" href="/#contacto">
               Contacto
             </a>

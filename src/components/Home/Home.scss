@@ -3,293 +3,292 @@ $font-2: "Open Sans"; //FUENTE Secundaria
 
 // Desktop
 .home-header {
-    margin-top: 5%;
-    background-image: url("../../assets/img/home.png");
-    background-position: center center;
-    background-size: cover;
-    // background-attachment: fixed;
-    width: 100%;
-    height: 477px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    p {
-        font-family: $font-1;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 43px;
-        text-align: center;
-        color: #ffffff;
-        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        padding: 0 295px;
-        z-index: 5;
-    }
+  margin-top: 5%;
+  background-image: url("../../assets/img/home.png");
+  background-position: center center;
+  background-size: cover;
+  // background-attachment: fixed;
+  width: 100%;
+  height: 477px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-family: $font-1;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 295px;
+    z-index: 5;
+  }
 }
 .layer-header::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 477px;
-    margin-top: 5%;
-    background: rgba(0, 0, 0, 0.25);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 477px;
+  margin-top: 5%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 .sobre-mi {
-    padding-top: 60px;
-    .sobre-mi__text {
-        z-index: 3;
-        padding: 0 60px;
-        h3 {
-            font-family: $font-1;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 45px;
-            line-height: 54px;
-            text-align: center;
-            color: rgba(0, 0, 0, 0.7);
-            margin-bottom: 13px;
-        }
-        p {
-            text-align: justify;
-            font-family: $font-2;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 33px;
-            text-align: justify;
-            color: rgba(0, 0, 0, 0.7);
-        }
+  padding-top: 60px;
+  .sobre-mi__text {
+    z-index: 3;
+    padding: 0 60px;
+    h3 {
+      font-family: $font-1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 54px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 13px;
     }
-    .sobre-mi__vector {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        .notebookVector {
-            padding-top: 100px;
-        }
-        .notebook {
-            position: absolute;
-            transform: translate(-20%, 50px);
-        }
+    p {
+      text-align: justify;
+      font-family: $font-2;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      text-align: justify;
+      color: rgba(0, 0, 0, 0.7);
     }
+  }
+  .sobre-mi__vector {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .notebookVector {
+      padding-top: 100px;
+    }
+    .notebook {
+      position: absolute;
+      transform: translate(-20%, 50px);
+    }
+  }
 }
-.notebookVectorMax{
-    display: none;
+.notebookVectorMax {
+  display: none;
 }
 
 .vector {
-    position: absolute;
-    top: 100%;
-    height: 40%;
-    z-index: -1;
+  position: absolute;
+  top: 100%;
+  height: 40%;
+  z-index: -1;
 }
 .i-copywriting-responsiveMP {
-    display: initial;
-    overflow: visible;
-    flex-wrap: nowrap;
-    overflow-wrap: normal;
+  display: initial;
+  overflow: visible;
+  flex-wrap: nowrap;
+  overflow-wrap: normal;
 }
 .i-copywriting-responsiveT {
-    display: none;
+  display: none;
 }
 .i-copywriting {
-    padding-top: 50px;
-    padding-bottom: 177px;
-    .i-copywriting__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 5;
-        h3 {
-            font-family: $font-1;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 45px;
-            line-height: 54px;
-            text-align: center;
-            color: rgba(0, 0, 0, 0.8);
-            span {
-                color: #00a3b3;
-            }
-        }
+  padding-top: 50px;
+  padding-bottom: 177px;
+  .i-copywriting__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    h3 {
+      font-family: $font-1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 45px;
+      line-height: 54px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.8);
+      span {
+        color: #00a3b3;
+      }
     }
-    .i-copywriting__text {
-        p {
-            text-align: justify;
-            font-family: $font-2;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 33px;
-            text-align: justify;
-            color: rgba(0, 0, 0, 0.7);
-            padding: 0 60px 0 60px;
-        }
+  }
+  .i-copywriting__text {
+    p {
+      text-align: justify;
+      font-family: $font-2;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      text-align: justify;
+      color: rgba(0, 0, 0, 0.7);
+      padding: 0 60px 0 60px;
     }
+  }
 }
 // Tablet
 @media (max-width: 991px) {
-    .home-header {
-        height: 275px;
-        p {
-            font-size: 1.5rem;
-            line-height: 28.8px;
-            padding: 0px 134px;
-        }
+  .home-header {
+    height: 275px;
+    p {
+      font-size: 1.5rem;
+      line-height: 28.8px;
+      padding: 0px 134px;
     }
-    .layer-header::after {
-        height: 275px;
+  }
+  .layer-header::after {
+    height: 275px;
+  }
+  .sobre-mi__text {
+    h3 {
+      font-size: 40px !important;
+      line-height: 48px !important;
+      text-align: center !important;
     }
-    .sobre-mi__text {
-        h3 {
-            font-size: 40px !important;
-            line-height: 48px !important;
-            text-align: center !important;
-        }
-        p {
-            font-size: 18px !important;
-            line-height: 25px !important;
-        }
+    p {
+      font-size: 18px !important;
+      line-height: 25px !important;
     }
-    .notebookVector {
-        position: relative;
-        width: 100%;
+  }
+  .notebookVector {
+    position: relative;
+    width: 100%;
+  }
+  .notebook {
+    width: 22%;
+  }
+  .i-copywriting-responsiveMP {
+    display: none;
+  }
+  .i-copywriting-responsiveT {
+    display: initial;
+  }
+  .i-copywriting {
+    padding-bottom: 59px !important;
+  }
+  .i-copywriting__title {
+    h3 {
+      font-size: 40px !important;
+      line-height: 48px !important;
+      text-align: center !important;
     }
-    .notebook {
-        width: 22%;
+  }
+  .i-copywriting__text {
+    // padding: 0 20px 0 0 !important;
+    p {
+      font-weight: 400;
+      font-size: 18px !important;
+      line-height: 25px !important;
     }
-    .i-copywriting-responsiveMP {
-        display: none;
-    }
-    .i-copywriting-responsiveT {
-        display: initial;
-    }
-    .i-copywriting {
-        padding-bottom: 59px !important;
-    }
-    .i-copywriting__title {
-        h3 {
-            font-size: 40px !important;
-            line-height: 48px !important;
-            text-align: center !important;
-        }
-    }
-    .i-copywriting__text {
-        padding: 0 20px 0 0 !important;
-        p {
-            font-weight: 400;
-            font-size: 18px !important;
-            line-height: 25px !important;
-        }
-    }
-    .vector {
-        position: absolute;
-        top: 65%;
-        height: 22%;
-        z-index: -1;
-    }
+  }
+  .vector {
+    position: absolute;
+    top: 65%;
+    height: 22%;
+    z-index: -1;
+  }
 }
 
 // Mobile
 @media (max-width: 576px) {
-    .home-header {
-        margin-top: 10%;
-        height: 152px;
-        align-items: flex-start !important;
-        p {
-            font-size: 1.125rem !important;
-            line-height: 21.6px !important;
-            padding: 32px 63px !important;
-        }
+  .home-header {
+    margin-top: 10%;
+    height: 152px;
+    align-items: flex-start !important;
+    p {
+      font-size: 1.125rem !important;
+      line-height: 21.6px !important;
+      padding: 32px 63px !important;
     }
-    .layer-header::after {
-        margin-top: 10%;
-        height: 152px;
+  }
+  .layer-header::after {
+    margin-top: 10%;
+    height: 152px;
+  }
+  .sobre-mi__text {
+    padding: 0 52px !important;
+    h3 {
+      font-size: 32px !important;
+      line-height: 38px !important;
+      text-align: center !important;
+      margin-bottom: 16px !important;
     }
-    .sobre-mi__text {
-        padding: 0 52px !important;
-        h3 {
-            font-size: 32px !important;
-            line-height: 38px !important;
-            text-align: center !important;
-            margin-bottom: 16px !important;
-        }
-        p {
-            font-size: 15px !important;
-            line-height: 20px !important;
-        }
+    p {
+      font-size: 15px !important;
+      line-height: 20px !important;
     }
-    .notebookVector {
-        position: relative;
-        width: 45%;
-        padding-top: 0 !important;
+  }
+  .notebookVector {
+    position: relative;
+    width: 45%;
+    padding-top: 0 !important;
+  }
+  .notebook {
+    padding: 0 !important;
+    transform: translate(-20%, 0px) !important;
+    width: 25%;
+  }
+  .i-copywriting-responsiveMP {
+    display: initial;
+    overflow: visible;
+    flex-wrap: nowrap;
+    overflow-wrap: normal;
+    margin-bottom: 16px;
+  }
+  .i-copywriting-responsiveT {
+    display: none;
+  }
+  .i-copywriting {
+    padding-bottom: 59px !important;
+  }
+  .i-copywriting__title {
+    h3 {
+      font-size: 32px !important;
+      line-height: 38px !important;
+      text-align: center !important;
     }
-    .notebook {
-        padding: 0 !important;
-        transform: translate(-20%, 0px) !important;
-        width: 25%;
+  }
+  .i-copywriting__text {
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      //   padding: 0 52px !important;
     }
-    .i-copywriting-responsiveMP {
-        display: initial;
-        overflow: visible;
-        flex-wrap: nowrap;
-        overflow-wrap: normal;
-        margin-bottom: 16px;
-    }
-    .i-copywriting-responsiveT {
-        display: none;
-    }
-    .i-copywriting {
-        padding-bottom: 59px !important;
-    }
-    .i-copywriting__title {
-        h3 {
-            font-size: 32px !important;
-            line-height: 38px !important;
-            text-align: center !important;
-        }
-    }
-    .i-copywriting__text {
-        p {
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 20px;
-            padding: 0 52px !important;
-        }
-    }
-    .vector {
-        position: absolute;
-        top: 115%;
-        height: 22%;
-        z-index: -1;
-    }
+  }
+  .vector {
+    position: absolute;
+    top: 115%;
+    height: 22%;
+    z-index: -1;
+  }
 }
-
 
 // Desktop (large desktops, 1400px and up)
 @media (min-width: 1400px) {
-    .sobre-mi{
-        max-width: 1440px;
-        margin: auto;
+  .sobre-mi {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .notebookVectorMax {
+    display: initial !important;
+  }
+  .sobre-mi__vector {
+    .notebookVector {
+      display: none;
+      padding-top: 0 !important;
     }
-    .notebookVectorMax{
-        display: initial !important;
+    .notebook {
+      transform: translate(-50%, 0px) !important;
     }
-    .sobre-mi__vector {
-        .notebookVector {
-            display: none;
-            padding-top: 0 !important;
-        }
-        .notebook {
-            transform: translate(-50%, 0px) !important;
-        }
-    }
-    .i-copywriting{
-        max-width: 1440px;
-        margin: auto;
-    }
+  }
+  .i-copywriting {
+    max-width: 1440px;
+    margin: auto;
+  }
 }

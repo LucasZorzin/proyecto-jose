@@ -30,7 +30,7 @@ function Navbar() {
         <div className="line"></div>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <div className="navbar-nav">
-            <a className="nav-link" href="/#sobre-mi">
+            <a className="nav-link pt-2" href="/#sobre-mi">
               Sobre mí
             </a>
             <a className="nav-link" href="/#copywriting">

@@ -32,7 +32,7 @@ function Card({ img, nombre, descripcion }) {
 
       {/* hover */}
       <div className="info d-flex flex-column justify-content-between">
-        <h3>{nombre}</h3>
+        <h3 className="m-0">{nombre}</h3>
         <p>{descripcion}</p>
 
         <div className="d-flex justify-content-end">

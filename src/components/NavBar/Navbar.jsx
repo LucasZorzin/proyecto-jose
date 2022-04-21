@@ -13,7 +13,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container-fluid container-padding">
         <Link to={"/"} className="navbar-brand">
-          Jose Villagra
+          José Villagra
         </Link>
         <button
           className="navbar-toggler"

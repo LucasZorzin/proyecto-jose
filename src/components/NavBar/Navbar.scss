@@ -8,7 +8,7 @@
   box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.075);
 }
 .navbar-brand {
-  font-family: "Gotham-Medium";
+  font-family: "Gotham-Medium", "Open Sans";
   font-size: 0.875rem;
   font-style: italic;
   line-height: 36px;
@@ -16,7 +16,7 @@
   color: rgba(0, 0, 0, 0.8) !important;
 }
 .nav-link {
-  font-family: "Gotham-Medium";
+  font-family: "Gotham-Medium", "Open Sans";
   font-size: 1.125rem;
   line-height: 26px;
   font-weight: 400;
@@ -35,7 +35,7 @@
   .accordion-item {
     border: none;
     outline: none;
-    font-family: "Gotham-Medium";
+    font-family: "Gotham-Medium", "Open Sans";
     $accordion-button-focus-box-shadow: none;
 
     h2 button {

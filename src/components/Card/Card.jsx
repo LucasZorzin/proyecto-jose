@@ -38,7 +38,10 @@ function Card({ img, nombre, descripcion }) {
         <div className="d-flex justify-content-end">
           <BtnCustom
             text={"+ info"}
-            onClick={() => navigate(`/proyectos/${nombre}`)}
+            onClick={() => {
+              navigate(`/proyectos/${nombre}`);
+              document.getElementsByTagName('HTML')[0].style.scrollBehavior = "initial";
+            }}
           />
         </div>
       </div>

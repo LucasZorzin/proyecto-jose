@@ -18,5 +18,5 @@ html, body {
 }
 
 html {
-  scroll-behavior: initial !important;
+  scroll-behavior: smooth;
 }

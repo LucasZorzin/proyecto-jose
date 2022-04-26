@@ -39,7 +39,7 @@ $font-2: "Open Sans"; //FUENTE Secundaria
 }
 
 .sobre-mi {
-  padding-top: 5.625rem;
+  padding-top: 90px;
   .sobre-mi__text {
     z-index: 3;
     padding: 0 60px;
@@ -144,6 +144,9 @@ $font-2: "Open Sans"; //FUENTE Secundaria
   .layer-header::after {
     height: 275px;
   }
+  .sobre-mi{
+    padding-top: 52px;
+  }
   .sobre-mi__text {
     h3 {
       font-size: 40px !important;
@@ -209,6 +212,9 @@ $font-2: "Open Sans"; //FUENTE Secundaria
   .layer-header::after {
     margin-top: 10%;
     height: 152px;
+  }
+  .sobre-mi{
+    padding-top: 33px;
   }
   .sobre-mi__text {
     padding: 0 52px !important;

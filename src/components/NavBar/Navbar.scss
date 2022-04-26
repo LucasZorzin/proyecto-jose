@@ -218,3 +218,11 @@
     position: initial;
   }
 }
+
+// Accordion btn
+.accordion-button:not(.collapsed)::after{
+  transform: rotate(180deg);
+}
+.collapsed::after{
+  transform: rotate(0deg);
+}

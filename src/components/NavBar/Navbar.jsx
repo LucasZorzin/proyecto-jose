@@ -40,7 +40,7 @@ function Navbar() {
               <div className="accordion-item d-flex flex-column align-items-center justify-content-center">
                 <h2 className="accordion-header" id="headingOne">
                   <button
-                    className="accordion-button "
+                    className="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"

@@ -17,9 +17,9 @@ function Home() {
           </p>
         </div>
       </div>
-      <div className="row sobre-mi">
+      <div id="sobre-mi" className="row sobre-mi">
         <div className="col-12 col-md-7 sobre-mi__text">
-          <h3 id="sobre-mi">Algo sobre mí</h3>
+          <h3>Algo sobre mí</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod
             tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -42,9 +42,9 @@ function Home() {
         </div>
       </div>
       <img className="vector" src={vector} alt="vector" />
-      <div className="row i-copywriting">
+      <div id="copywriting" className="row i-copywriting">
         <div className="col-12 col-md-6 col-lg-5 i-copywriting__title">
-          <h3 className="i-copywriting-responsiveMP" id="copywriting">
+          <h3 className="i-copywriting-responsiveMP">
             La importancia del <br />
             <span>copywriting</span>
           </h3>

@@ -21,6 +21,7 @@ import totalSonrisa from "../assets/img/proyectos/redaccion-web/total-sonrisa.pn
 import trucho1 from "../assets/img/proyectos/truchos/trucho1.png";
 import trucho2 from "../assets/img/proyectos/truchos/trucho2.png";
 import trucho3 from "../assets/img/proyectos/truchos/trucho3.png";
+import trucho4 from "../assets/img/proyectos/truchos/trucho4.png";
 import truchos from "../assets/img/truchos.png";
 
 export const servicios = [
@@ -237,6 +238,11 @@ export const proyectos = [
       {
         id: 3,
         img: trucho3,
+        link: "https://www.behance.net/gallery/133436139/Truchos-Copywriting",
+      },
+      {
+        id: 4,
+        img: trucho4,
         link: "https://www.behance.net/gallery/133436139/Truchos-Copywriting",
       },
     ],

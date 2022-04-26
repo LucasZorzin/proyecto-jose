@@ -1,6 +1,6 @@
 import "./Navbar.scss";
 
-import { FaChevronUp } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import React from "react";
 
@@ -99,7 +99,7 @@ function Navbar() {
               </div>
             </div>
             <p className="nav-link m-0 link__portfolio">
-              Portfolio <FaChevronUp size={20} className="chevron__icon" />
+              Portfolio <FaChevronDown size={20} className="chevron__icon" />
               <ul>
                 <li>
                   <Link to={"/proyectos/Redacción web"} onClick={menu}>
